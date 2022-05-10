@@ -21,10 +21,9 @@ nav{
 
 .homebtn {
     margin-left: -48px;
+    margin-bottom: 24px;
     position: absolute;
     bottom: 0;
-}
-.homebtn a {
     font-size: 25px;
 }
 
