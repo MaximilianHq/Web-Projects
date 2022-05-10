@@ -19,9 +19,22 @@ nav{
     -webkit-transform: rotate(-180deg);
 }
 
+.credit {
+    font-size: 11px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 150px;
+    margin-left: 100px;
+}
+.credit a {
+    text-decoration: none;
+    color: #979797;
+    white-space: nowrap;
+}
+
 .homebtn {
-    margin-left: -48px;
-    margin-bottom: 24px;
+    margin-left: -50px;
+    margin-bottom: 25px;
     position: absolute;
     bottom: 0;
     font-size: 25px;
