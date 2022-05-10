@@ -1,0 +1,158 @@
+body { 
+    display: flex;
+    justify-content: center;
+    font-family: Arial;
+    margin: 0;
+
+    /* Background image */
+    background-image: url(../media/stone-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* PACK */
+main {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    padding: 30px 50px 50px;
+    margin-left: 75px;
+}
+@media screen and (max-width:800px) {
+
+    body {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 8px 20px 20px;
+    }
+}
+
+/* SITE-NAV */
+.navigation {
+    margin-top: 20px;
+    color: rgb(162, 162, 162);
+    font-size: 12.5px;
+}
+.navigation a {
+    text-decoration: none;
+    color: rgb(109, 109, 109);
+}
+
+/* PACK VERSION */
+.pack-version {
+    color: rgb(162, 162, 162);
+    padding-left: 10px;
+    margin-top: -15px;
+    font-size: 12.5px;
+    border-left: 3px solid rgb(162, 162, 162);
+    font-family: 'Radio Canada', sans-serif;
+    margin-left: 3px;
+    border-radius: 3px;
+}
+
+/* SLIDESHOW CONTAINER */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 20px;
+
+    /* Background */
+    background-image: url(../media/stone-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin: -40px 0px 0px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    padding: 30px;
+}
+
+/* Position the button at each side */
+.next {
+    right: 0;
+}
+.prev {
+    left: 0;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.slide img {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* PACK */
+.pack-info {
+    background-color: rgb(240, 240, 240);
+    margin: auto;
+    padding: 20px;
+    margin-top: 25px;
+    margin-left: 0px;
+    border-left: 4px solid #02c8ff; 
+    border-radius: 2px 4px 4px 2px;
+}
+
+/* DOWNLOAD */
+.download {
+    margin-top: 30px;
+    padding: 15px;
+    width: 70%;
+    border: 0.5px solid rgb(177, 177, 177);
+    line-height: 30px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 3px;
+}
+.download a {
+    text-decoration: none;
+    color: black;
+}
+
+/* SHOWCASE */
+.showcase-container {
+    max-width: 225px;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: black;
+    padding: 30px;
+    background-color: rgb(240, 240, 240);
+    cursor: pointer;    
+}
+@media screen and (max-width:800px) {
+    .showcase-container {
+        flex-direction: row;
+        max-width: 800px;
+        margin-left: 75px;
+    }
+    .showcase-container img {
+        margin-top: 15px;
+        max-width: 100px;
+    }
+}

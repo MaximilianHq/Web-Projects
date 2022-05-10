@@ -1,0 +1,113 @@
+/* GENERAL */
+
+body{
+    background-image: url("../pictures/background.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    font-family: 'Fredoka', sans-serif;
+}
+.wrapper{
+    background-color: rgba(255, 255, 255, 0.322);
+    max-width: 500px;
+    margin: auto;
+    margin-top: 15%;
+    padding: 20px;
+    border-radius: 20px;
+}
+::placeholder{
+    color: #303030;
+    font-size: 13px;
+    font-weight: 640;
+    font-style: italic;
+}
+
+/* INPUT / OUTPUT */
+
+#i,#i2,#o,#o2{
+    color: black;
+    background-color: #f1f1f1;
+    padding: 6px;
+    padding-bottom: 7px;
+    font-size: 14px;
+    font-weight: 640;
+    font-family: 'Fredoka', sans-serif;
+    border-radius: 5px;
+}
+#i,#i2{
+    direction: rtl;
+}
+input[type=number]{
+    width: 200px;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    font-family: 'Fredoka', sans-serif;
+    border-radius: 5px;
+}
+#output, #output2{
+    color: #ffffff;
+}
+
+/* CONVERTER */
+
+.converterMass{
+    text-align: center;
+    margin-top: 50px;
+}
+.converterDistance{
+    text-align: center;
+    margin-top: 60px;
+}
+
+/* WATERMARK */
+
+#watermark{
+    margin-top: 270px;
+    text-align: right;
+    margin-right: 50px;
+    font-size: 18px;
+    font-family: 'Fredoka', sans-serif;
+}
+#watermark img{
+    max-block-size: 30px;
+    margin-right: 10px;
+}
+#watermark a{
+    color: rgb(202, 202, 202);
+}
+
+/* Small devices (tablets) */
+
+@media only screen and (max-width: 1200px){
+    .wrapper{
+        margin-top: 40%;
+    }
+    #watermark{
+        margin-top: 380px;
+    }
+}
+
+/* Extra small devices (phones) */
+
+@media only screen and (max-width: 600px) {
+    .wrapper{
+        margin-top: 55%;
+    }
+    input[type=number]{
+        width: 160px;
+    }
+    #watermark{
+        margin-top: 250px;
+    }
+}
+
+/* Super small devices (galaxy fold) */
+
+@media only screen and (max-width: 300px){
+    input[type=number]{
+        width: 60px;
+    }
+    #watermark{
+        margin-top: 90px;
+    }
+}

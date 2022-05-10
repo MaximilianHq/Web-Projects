@@ -1,0 +1,16 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+.wrapper {
+    margin-left: 75px;
+    text-align: center; /* align horizontal */
+}
+#headline {
+    font-size: 200px; 
+}
+h2 , .info{
+    font-size: 50px;
+}
+.info {
+    margin-top: 230px;
+}
