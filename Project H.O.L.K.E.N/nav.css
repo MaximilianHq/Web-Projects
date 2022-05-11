@@ -1,43 +1,52 @@
-nav{
-    background-color: rgb(0, 0, 0);
+nav {
+    position: fixed;
     height: 100%;
     top: 0;
     width: 0;
     left: 0;
-    position: fixed;
+
     transition: 0.5s;
-    z-index: 1; /* z-index property specifies the stack order of an element. */
-    overflow-x: hidden; /* Overflow specifies what should happen if 
+    z-index: 1;
+    /* z-index property specifies the stack order of an element. */
+    overflow-x: hidden;
+    /* Overflow specifies what should happen if 
                            content overflows an element's box. */
-}
-
-.credit {
-    font-size: 11px;
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 150px;
-    margin-left: 100px;
-}
-.credit a {
-    text-decoration: none;
-    color: #979797;
-    white-space: nowrap;
-}
-
-.homebtn {
-    margin-left: -50px;
-    margin-bottom: 25px;
-    position: absolute;
-    bottom: 0;
-    font-size: 25px;
+    background-color: rgb(0, 0, 0);
 }
 
 .menu {
+    margin-left: -50px;
+    margin-top: 30px;
+
     display: flex;
     justify-content: flex-start;
     gap: 110px;
-    margin-left: -50px;
 }
+.menu a {
+    display: flex;
+    gap: 23px;
+    margin-left: 75px;
+
+    text-decoration: none;
+    font-size: 25px;
+    color: #979797;
+}
+
+.menu-type2 {
+    margin-top: 30px;
+
+    -webkit-transform: rotate(-180deg);
+    font-size: 36px;   
+}
+.menu-type2 a {
+    margin-right: 230px;
+    margin-left: 30px;
+
+    text-decoration: none;
+    color: #979797;
+}
+
+/* !CUNTRUCTION ONGOING!
 
 nav a:not(#nav a), .openNav {
     margin-left: 25px;
@@ -60,7 +69,7 @@ nav a:not(#nav a) {
     white-space: nowrap;
 }
 
-.openNav a, .menu a, .homebtn a {
+.openNav div a, .menu a, .homebtn a {
     margin-left: 25px;
     margin-top: 30px;
     text-decoration: none;
@@ -76,14 +85,79 @@ nav a:not(#nav a) {
     white-space: nowrap;
 }
 
-.closebtn {
-    margin-right: 30px;
-    font-size: 36px; /* FIX THIS SHIT, FONT SIZE OVERRULED BY NAV A */
-    margin-left: 230px;
-    -webkit-transform: rotate(-180deg);
+!CUNTRUCTION ONGOING! */
+/* HOVER THEME */
+.openNav div:hover, .openNav a:hover, .menu a:hover, .menu-type2 a:hover, .homebtn a:hover {
+    color: aqua;
+}
+
+.openNav {
+    margin-left: 25px;
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    gap: 23px;
+
+    cursor: pointer;
+    
+    font-size: 25px;
+    font-family: "Lato", sans-serif;
+    color: #979797;
+}
+.openNav span {
+    margin-left: 23px;
+}
+.openNav-short {
+    margin-left: 75px;
+}
+.openNav-short a {
+    text-decoration: none;
+    color: #979797;
+}
+
+/* NEW BUILD */
+
+.credit {
+    position: absolute;
+    margin-bottom: 150px;
+    margin-left: 100px;
+    bottom: 0;
+
+    font-size: 11px;
+}
+
+.credit a {
+    white-space: nowrap;
+    text-decoration: none;
+    color: #979797;
+}
+
+.homebtn {
+    position: absolute;
+    margin-left: -50px;
+    margin-bottom: 25px;
+    bottom: 0;
+
+    font-size: 25px;
+}
+
+.homebtn a {
+    margin-left: 75px;
+
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    color: #979797;
 }
 
 @media screen and (max-height: 450px) {
-    nav {padding-top: 15px;}
-    nav a {font-size: 18px;}
+    nav {
+        padding-top: 15px;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
 }

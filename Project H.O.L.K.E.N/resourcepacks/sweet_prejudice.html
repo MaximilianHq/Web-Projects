@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,30 +12,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <article>
 
         <!-- NAVIGATION MENU -->
         <nav id="nav">
-            
+
             <div class="menu">
                 <!-- menu button -->
                 <a style="font-size:30px; cursor:pointer" onclick="openNav()">&#9777;</a>
                 <!-- close button -->
                 <a href="javascript:void(0)" style="font-size: 40px;" onclick="closeNav()">&times;</a>
             </div>
-    
+
             <div class="openNav" onclick="openNavProjects()">
                 <img src="../media/projects.png">
                 Projects
             </div>
-    
+
             <div class="openNav" onclick="openNavSites()">
                 <img src="../media/sites.png">
                 Sites
             </div>
-    
+
             <div class="openNav" onclick="openNavResourcepacks()">
                 <img src="../media/resourcepacks.png">
                 Resourcepacks
@@ -53,21 +55,21 @@
             <div class="homebtn">
                 <a href="../index.html">&#10070;</a>
             </div>
-    
+
         </nav>
-    
+
         <!-- PROJECTS NAVIGATION MENU -->
         <nav id="navProjects">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNavProjects()">&#10174;</a>
             <a href="../projects/unitconverter/html/unitconverter.html">Unitconverter</a>
         </nav>
-    
+
         <!-- SITES NAVIGATION MENU -->
         <nav id="navSites">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNavSites()">&#8592;</a>
             <a href="../sites/Judaism/">Judaism</a>
         </nav>
-    
+
         <!-- RESOURCEPACKS NAVIGATION MENU -->
         <nav id="navResourcepacks">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNavResourcepacks()">&#8592;</a>
@@ -90,35 +92,35 @@
             </div>
         </nav>
 
-            <!-- PRACTICES NAVIGATION MENU -->
-            <nav id="navPractices">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNavPractices()">&#8592;</a>
-                <a href="../exercises/practices/web_history.html">WWW History</a>
-                <a href="../exercises/practices/browsers.html">Browsers</a>
-                <a href="../exercises/practices/charts/charts.html">Charts</a>
-            </nav>
+        <!-- PRACTICES NAVIGATION MENU -->
+        <nav id="navPractices">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNavPractices()">&#8592;</a>
+            <a href="../exercises/practices/web_history.html">WWW History</a>
+            <a href="../exercises/practices/browsers.html">Browsers</a>
+            <a href="../exercises/practices/charts/charts.html">Charts</a>
+        </nav>
 
-            <!-- TEMPLATES NAVIGATION MENU -->
-            <nav id="navTemplates">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNavTemplates()">&#8592;</a>
-                <a href="../exercises/templates/lists.html">Lists</a>
-                <a href="../exercises/templates/style_sheets.html">Style Sheets</a>
-                <a href="../exercises/templates/box_model/box_model.html">Box Model</a>
-                <a href="../exercises/templates/javascript/java_script.html">Java Script</a>
-                <a href="../exercises/templates/fonts.html">Fonts</a>
-            </nav>
-    
+        <!-- TEMPLATES NAVIGATION MENU -->
+        <nav id="navTemplates">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNavTemplates()">&#8592;</a>
+            <a href="../exercises/templates/lists.html">Lists</a>
+            <a href="../exercises/templates/style_sheets.html">Style Sheets</a>
+            <a href="../exercises/templates/box_model/box_model.html">Box Model</a>
+            <a href="../exercises/templates/javascript/java_script.html">Java Script</a>
+            <a href="../exercises/templates/fonts.html">Fonts</a>
+        </nav>
+
         <script src="../nav.js"></script>
-    
+
     </article>
 
     <main>
 
         <div class="navigation">
             <a href="../index.html">Home</a>
-            » 
-            <a  onclick="openNavResourcepacks()">Resource packs</a>
-            » 
+            »
+            <a onclick="openNavResourcepacks()">Resource packs</a>
+            »
             Sweet Prejudice
         </div>
 
@@ -127,12 +129,12 @@
 
         <p style="text-align: justify; font-size: 15px;">
             Have you ever launched Minecraft and thought, damn i wish there was a
-            resource pack reflecting my prejudice self. Luck is on your side for i have 
-            the perfect resource pack just for you! This resource pack brings forward 
-            the worst preconceptions the worlds has to offer, all in one package. 
-            From colonising villages to exploring the second world war or you might 
-            want to go for a ride in Thomas the Tank? Trust me when i say you won't get 
-            bored for some time, whilst exploring Minecraft with surprises laying 
+            resource pack reflecting my prejudice self. Luck is on your side for i have
+            the perfect resource pack just for you! This resource pack brings forward
+            the worst preconceptions the worlds has to offer, all in one package.
+            From colonising villages to exploring the second world war or you might
+            want to go for a ride in Thomas the Tank? Trust me when i say you won't get
+            bored for some time, whilst exploring Minecraft with surprises laying
             behind every corner.
         </p>
 
@@ -146,10 +148,10 @@
             <div class="slide fade"><img src="media/slideshow/thomas.png"></div>
             <div class="slide fade"><img src="media/slideshow/spider.png"></div>
             <div class="slide fade"><img src="media/slideshow/ghast.png"></div>
-            
+
             <a class="prev" onclick="plusSlides(-1)">❮</a>
             <a class="next" onclick="plusSlides(1)">❯</a>
-            
+
         </div>
 
         <div class="pack-info">
@@ -173,7 +175,7 @@
 
     <aside class="showcase-container">
 
-        <audio id="audio" src="media/showcase/idle4.ogg" autoplay="false" ></audio>
+        <audio id="audio" src="media/showcase/idle4.ogg" autoplay="false"></audio>
 
         <img onclick="playSound();" src="media/showcase/villager-pre.png" alt="">
         <img onclick="playSound();" src="media/showcase/pillager.png" alt="">
@@ -182,11 +184,12 @@
             function playSound() {
                 var sound = document.getElementById("audio");
                 sound.play();
-            }   
+            }
         </script>
 
     </aside>
 
     <script src="img_slide.js"></script>
 </body>
+
 </html>

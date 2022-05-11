@@ -1,15 +1,19 @@
 body {
     font-family: "Lato", sans-serif;
 }
-.wrapper {
+.main {
     margin-left: 75px;
     text-align: center; /* align horizontal */
 }
-#headline {
-    font-size: 200px; 
+.headline {
+    font-size: 15vw; 
 }
-h2 , .info{
-    font-size: 50px;
+.headline2 {
+    margin-top: -12vw;
+    margin-left: -6vw;
+}
+h2 {
+    font-size: 3.6vw;
 }
 .info {
     margin-top: 230px;
