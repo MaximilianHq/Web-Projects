@@ -35,6 +35,7 @@ nav {
 .menu-type2 {
     margin-top: 30px;
 
+    transform: rotate;
     -webkit-transform: rotate(-180deg);
     font-size: 36px;   
 }
@@ -46,7 +47,7 @@ nav {
     color: #979797;
 }
 
-/* !CUNTRUCTION ONGOING!
+/*  !RECUNTRUCTION ONGOING!
 
 nav a:not(#nav a), .openNav {
     margin-left: 25px;
@@ -84,11 +85,14 @@ nav a:not(#nav a) {
     margin-left: 75px;
     white-space: nowrap;
 }
+    !RECUNTRUCTION ONGOING! */
 
-!CUNTRUCTION ONGOING! */
+
 /* HOVER THEME */
-.openNav div:hover, .openNav a:hover, .menu a:hover, .menu-type2 a:hover, .homebtn a:hover {
-    color: aqua;
+/* .openNav div:hover, .openNav a:hover, 
+.menu a:hover, .menu-type2 a:hover, 
+.homebtn a:hover */.openNav div:hover img{
+    background-color: aqua;
 }
 
 .openNav {
