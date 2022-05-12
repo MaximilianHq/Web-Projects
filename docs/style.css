@@ -29,16 +29,21 @@ h2 {
 
 body {
     font-family: "Lato", sans-serif;
-    
-    background-image: url(media/bg1x.jpg); /* COMMERCIAL USE CC */
+
+    background-image: url(media/bg1x.jpg);
+    /* COMMERCIAL USE CC */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+
 @media screen and (min-width: 2000px) {
     body {
-        background-image: url(media/bg2x.jpg); /* COMMERCIAL USE CC */
-    };
+        background-image: url(media/bg2x.jpg);
+        /* COMMERCIAL USE CC */
+    }
+
+    ;
 }
 
 h2 {
@@ -48,15 +53,17 @@ h2 {
 .main {
     margin-left: 75px;
 
-    text-align: center; /* align horizontal */
+    text-align: center;
+    /* align horizontal */
 }
 
 .headline {
     margin-top: 250px;
 
     color: rgb(255, 255, 255);
-    font-size: 10vw; 
+    font-size: 10vw;
 }
+
 .headline2 {
     margin-top: -8vw;
     margin-left: -5vw;

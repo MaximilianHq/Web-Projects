@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,10 +11,12 @@
         @import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
     </style>
 </head>
+
 <body>
     <div class="wrapper">
         <div class="converterMass">
-            <p> <!-- first selection unit (input1) -->
+            <p>
+                <!-- first selection unit (input1) -->
                 <select name="i" id="i" autofocus onChange="converterMass(i.value,o.value)">
                     <option value="from">from</option>
                     <option value="kilo">kilo</option>
@@ -22,12 +25,11 @@
                     <option value="ounce">ounce</option>
                     <option value="stone">stone</option>
                     <option value="pound">pound</option>
-                </select> 
+                </select>
 
                 <!-- input area -->
-                <input type="number" name="input" id="input" placeholder="Mass" 
-                oninput="converterMass(i.value,o.value)" onChange="converterMass(i.value,o.value)" 
-                style="font-weight: 550; text-align: center;">
+                <input type="number" name="input" id="input" placeholder="Mass" oninput="converterMass(i.value,o.value)"
+                    onChange="converterMass(i.value,o.value)" style="font-weight: 550; text-align: center;">
 
                 <!-- second selection unit (output1) -->
                 <select name="o" id="o" onChange="converterMass(i.value,o.value)">
@@ -38,15 +40,16 @@
                     <option value="ounce">ounce</option>
                     <option value="stone">stone</option>
                     <option value="pound">pound</option>
-                </select> 
+                </select>
             </p>
             <!-- Invisible | Character -->
-                      <!-- V -->            
+            <!-- V -->
             <p id="output">ㅤ</p>
         </div>
 
         <div class="converterDistance">
-            <p> <!-- first selection unit (input2) -->
+            <p>
+                <!-- first selection unit (input2) -->
                 <select name="i2" id="i2" onChange="converterDistance(i2.value,o2.value)">
                     <option value="from">from</option>
                     <option value="meter">meter</option>
@@ -55,12 +58,12 @@
                     <option value="foot">foot</option>
                     <option value="inch">inch</option>
                     <option value="nmi">n. mile</option>
-                </select> 
+                </select>
 
                 <!-- input area -->
-                <input type="number" name="input2" id="input2" placeholder="Distance" 
-                oninput="converterDistance(i2.value,o2.value)" onChange="converterDistance(i2.value,o2.value)" 
-                style="font-weight: 550; text-align: center;">
+                <input type="number" name="input2" id="input2" placeholder="Distance"
+                    oninput="converterDistance(i2.value,o2.value)" onChange="converterDistance(i2.value,o2.value)"
+                    style="font-weight: 550; text-align: center;">
 
                 <!-- second selection unit (output2) -->
                 <select name="o2" id="o2" onChange="converterDistance(i2.value,o2.value)">
@@ -71,18 +74,20 @@
                     <option value="foot">foot</option>
                     <option value="inch">inch</option>
                     <option value="nmi">n. mile</option>
-                </select> 
+                </select>
             </p>
-             <!-- Invisible | Character -->
-                       <!-- V -->
+            <!-- Invisible | Character -->
+            <!-- V -->
             <p id="output2">ㅤ</p>
         </div>
     </div>
 
-    <p id="watermark"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/GitHub_Mark.png/128px-GitHub_Mark.png" 
-        alt="GitHub:"><a href="https://github.com/NoLifer47/unitconverter">Maximilian Hallqvist</a></p>
+    <p id="watermark"><img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/GitHub_Mark.png/128px-GitHub_Mark.png"
+            alt="GitHub:"><a href="https://github.com/NoLifer47/unitconverter">Maximilian Hallqvist</a></p>
 
     <script src="../js/unitconverter.js"></script>
 
 </body>
+
 </html>

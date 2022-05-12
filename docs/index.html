@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> s
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,8 +8,8 @@
     <title>HOLKEN</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
-    <link rel="icon" href="media/template.png">
-    <script src="https://kit.fontawesome.com/3224e7e886.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="media/holken.png" style="color: blue;">
+    <script src="https://kit.fontawesome.com/82c349bd99.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -21,36 +21,40 @@
 
             <div class="menu">
                 <!-- menu button -->
-                <a style="font-size:30px; cursor:pointer" onclick="openNav()">&#9777;</a>
+                <a style="font-size:30px; cursor:pointer" onclick="openNav()">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
                 <!-- close button -->
-                <a href="javascript:void(0)" style="font-size: 40px;" onclick="closeNav()">&times;</a>
+                <a href="javascript:void(0)" style="font-size: 40px;" onclick="closeNav()">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
             </div>
 
             <div class="openNav">
 
                 <div onclick="openNavProjects()">
-                    <i class="fa-solid fa-diagram-project fa-0x"></i>
-                    <span>Projects</span>
+                    <i style="margin-left: -1px;" class="fa-solid fa-diagram-project"></i>
+                    <span style="margin-left: 21px">Projects</span>
                 </div>
 
                 <div onclick="openNavSites()">
-                    <i class="fa-solid fa-square-arrow-up-right"></i>
+                    <i class="fa-solid fa-window-maximize"></i>
                     <span>Sites</span>
                 </div>
 
                 <div onclick="openNavResourcepacks()">
-                    <i class="fa-solid fa-file-zipper fa-xm"></i>
-                    <span>Resourcepacks</span>
+                    <i style="margin-left: 4px;" class="fa-solid fa-file-arrow-down"></i>
+                    <span style="margin-left: 25px;">Resourcepacks</span>
                 </div>
 
                 <div onclick="openNavExercises()">
-                    <img  src="media/template.png" alt="">
-                    <span>Exercises</span>
+                    <i class="fa-solid fa-book-open"></i>
+                    <span style="margin-left: 20px;">Exercises</span>
                 </div>
 
                 <div>
-                    <img src="" alt="">
-                    <a href="old_site/old_site.html"></a>
+                    <i style="margin-left: 2px;" class="fa-solid fa-globe"></i>
+                    <span style="margin-left: 23px;">Old Site</span>
                 </div>
 
             </div>
@@ -87,7 +91,7 @@
             </div>
 
             <div class="openNav openNav-short">
-                <a href="sites/judaism/judaism.css">Sites</a>
+                <a href="sites/judaism/judaism.html">Judaism/a>
             </div>
         </nav>
 
@@ -114,13 +118,13 @@
                     <i class="fa-solid fa-book-bookmark"></i>
                     <span>Practices</span>
                 </div>
-    
+
                 <div onclick="openNavTemplates()">
                     <i class="fa-solid fa-book"></i>
                     <span>Templates</span>
                 </div>
             </div>
-            
+
         </nav>
 
         <!-- PRACTICES NAVIGATION MENU -->
@@ -128,7 +132,7 @@
             <div class="menu-type2">
                 <a href="javascript:void(0)" onclick="closeNavPractices()">&#10174;</a>
             </div>
-            
+
             <div class="openNav openNav-short">
                 <a href="exercises/practices/web_history.html">WWW History</a>
                 <a href="exercises/practices/browsers.html">Browsers</a>
@@ -141,7 +145,7 @@
             <div class="menu-type2">
                 <a href="javascript:void(0)" onclick="closeNavTemplates()">&#10174;</a>
             </div>
-            
+
             <div class="openNav openNav-short">
                 <a href="exercises/templates/lists.html">Lists</a>
                 <a href="exercises/templates/style_sheets.html">Style Sheets</a>

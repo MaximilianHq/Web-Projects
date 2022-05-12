@@ -22,6 +22,7 @@ nav {
     justify-content: flex-start;
     gap: 110px;
 }
+
 .menu a {
     display: flex;
     gap: 23px;
@@ -37,8 +38,9 @@ nav {
 
     transform: rotate;
     -webkit-transform: rotate(-180deg);
-    font-size: 36px;   
+    font-size: 36px;
 }
+
 .menu-type2 a {
     margin-right: 230px;
     margin-left: 30px;
@@ -89,34 +91,38 @@ nav a:not(#nav a) {
 
 
 /* HOVER THEME */
-/* .openNav div:hover, .openNav a:hover, 
-.menu a:hover, .menu-type2 a:hover, 
-.homebtn a:hover */.openNav div:hover img{
-    background-color: aqua;
+
+.homebtn a:hover i, .openNav div:hover i,
+.menu .fa-bars:hover, .menu .fa-xmark:hover {
+    transition: 0.4s;
+    color: rgb(75, 225, 255);
 }
 
 .openNav {
     margin-left: 25px;
-    margin-top: 20px;
+    margin-top: 30px;
 
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     white-space: nowrap;
-    gap: 23px;
+    gap: 30px;
 
     cursor: pointer;
-    
+
     font-size: 25px;
     font-family: "Lato", sans-serif;
     color: #979797;
 }
+
 .openNav span {
     margin-left: 23px;
 }
+
 .openNav-short {
     margin-left: 75px;
 }
+
 .openNav-short a {
     text-decoration: none;
     color: #979797;
