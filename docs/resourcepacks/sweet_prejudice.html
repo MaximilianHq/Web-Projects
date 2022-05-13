@@ -7,117 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sweet Prejudice</title>
     <link rel="stylesheet" href="resourcepacks.css">
-    <link rel="stylesheet" href="../nav.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300&display=swap" rel="stylesheet">
+    <!-- navigation panel -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
 
-    <article>
+    <!-- Navigation panel -->
+    <div id="nav-placeholder"></div>
 
-        <!-- NAVIGATION MENU -->
-        <nav id="nav">
-
-            <div class="menu">
-                <!-- menu button -->
-                <a style="font-size:30px; cursor:pointer" onclick="openNav()">&#9777;</a>
-                <!-- close button -->
-                <a href="javascript:void(0)" style="font-size: 40px;" onclick="closeNav()">&times;</a>
-            </div>
-
-            <div class="openNav" onclick="openNavProjects()">
-                <img src="../media/projects.png">
-                Projects
-            </div>
-
-            <div class="openNav" onclick="openNavSites()">
-                <img src="../media/sites.png">
-                Sites
-            </div>
-
-            <div class="openNav" onclick="openNavResourcepacks()">
-                <img src="../media/resourcepacks.png">
-                Resourcepacks
-            </div>
-
-            <div class="openNav" onclick="openNavExercises()">
-                <img src="../media/resourcepacks.png">
-                Exercises
-            </div>
-
-            <!-- OLD SITE -->
-            <div class="openNav">
-                <a href="../old_site/old_site.html">Old site</a>
-            </div>
-
-            <div class="homebtn">
-                <a href="../index.html">&#10070;</a>
-            </div>
-
-        </nav>
-
-        <!-- PROJECTS NAVIGATION MENU -->
-        <nav id="navProjects">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNavProjects()">&#10174;</a>
-            <a href="../projects/unitconverter/html/unitconverter.html">Unitconverter</a>
-        </nav>
-
-        <!-- SITES NAVIGATION MENU -->
-        <nav id="navSites">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNavSites()">&#8592;</a>
-            <a href="../sites/Judaism/">Judaism</a>
-        </nav>
-
-        <!-- RESOURCEPACKS NAVIGATION MENU -->
-        <nav id="navResourcepacks">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNavResourcepacks()">&#8592;</a>
-            <a href="../resourcepacks/sweet_prejudice.html">Sweet Prejudice</a>
-            <a href="../resourcepacks/frasig_slade.html">Fäsig Släde</a>
-        </nav>
-
-        <!-- EXERCISES NAVIGATION MENU -->
-        <nav id="navExercises">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNavExercises()">&#8592;</a>
-
-            <div class="openNav" onclick="openNavPractices()">
-                <img src="../media/resourcepacks.png">
-                Practices
-            </div>
-
-            <div class="openNav" onclick="openNavTemplates()">
-                <img src="../media/resourcepacks.png">
-                Templates
-            </div>
-        </nav>
-
-        <!-- PRACTICES NAVIGATION MENU -->
-        <nav id="navPractices">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNavPractices()">&#8592;</a>
-            <a href="../exercises/practices/web_history.html">WWW History</a>
-            <a href="../exercises/practices/browsers.html">Browsers</a>
-            <a href="../exercises/practices/charts/charts.html">Charts</a>
-        </nav>
-
-        <!-- TEMPLATES NAVIGATION MENU -->
-        <nav id="navTemplates">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNavTemplates()">&#8592;</a>
-            <a href="../exercises/templates/lists.html">Lists</a>
-            <a href="../exercises/templates/style_sheets.html">Style Sheets</a>
-            <a href="../exercises/templates/box_model/box_model.html">Box Model</a>
-            <a href="../exercises/templates/javascript/java_script.html">Java Script</a>
-            <a href="../exercises/templates/fonts.html">Fonts</a>
-        </nav>
-
-        <script src="../nav.js"></script>
-
-    </article>
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("/docs/assets/nav.html");
+        });
+    </script>
+    <!-- end of Navigation panel -->
 
     <main>
 
         <div class="navigation">
-            <a href="../index.html">Home</a>
+            <a href="/docs/index.html">Home</a>
             »
             <a onclick="openNavResourcepacks()">Resource packs</a>
             »
@@ -125,7 +37,7 @@
         </div>
 
         <h1>Sweet Prejudice Resource Pack 1.18 / 1.17 / 1.16</h1>
-        <h2 class="pack-version">BY NoLifer47 - LAST UPDATED 3 MAY 2022</h2>
+        <h2 class="pack-version">BY NoLifer47 - LAST UPDATED 15 MAY 2022</h2>
 
         <p style="text-align: justify; font-size: 15px;">
             Have you ever launched Minecraft and thought, damn i wish there was a
@@ -140,14 +52,14 @@
 
         <div class="slideshow-container">
 
-            <div class="slide fade"><img src="media/slideshow/pillager.png"></div>
-            <div class="slide fade"><img src="media/slideshow/trader.png"></div>
-            <div class="slide fade"><img src="media/slideshow/creeper.png"></div>
-            <div class="slide fade"><img src="media/slideshow/phantom.png"></div>
-            <div class="slide fade"><img src="media/slideshow/hogrider.png"></div>
-            <div class="slide fade"><img src="media/slideshow/thomas.png"></div>
-            <div class="slide fade"><img src="media/slideshow/spider.png"></div>
-            <div class="slide fade"><img src="media/slideshow/ghast.png"></div>
+            <div class="slide fade"><img src="media/slideshow_SP/pillager.png"></div>
+            <div class="slide fade"><img src="media/slideshow_SP/trader.png"></div>
+            <div class="slide fade"><img src="media/slideshow_SP/creeper.png"></div>
+            <div class="slide fade"><img src="media/slideshow_SP/phantom.png"></div>
+            <div class="slide fade"><img src="media/slideshow_SP/hogrider.png"></div>
+            <div class="slide fade"><img src="media/slideshow_SP/thomas.png"></div>
+            <div class="slide fade"><img src="media/slideshow_SP/spider.png"></div>
+            <div class="slide fade"><img src="media/slideshow_SP/ghast.png"></div>
 
             <a class="prev" onclick="plusSlides(-1)">❮</a>
             <a class="next" onclick="plusSlides(1)">❯</a>
@@ -164,10 +76,12 @@
 
             <b>Download links:</b> <br>
 
-            <a href="download/Sweet-Prejudice.zip" download>
+            <a href="download/Sweet-Prejudice 1.16+.zip.zip" download>
                 &#x1f517; [1.16+] Download Sweet Prejudice resource pack
             </a> <br>
-            <a href="">&#x1f517; [1.14.x] Download Sweet Prejudice resource pack</a>
+            <a href="download/Sweet-Prejudice 1.14.x.zip" download="">
+                &#x1f517; [1.14.x] Download Sweet Prejudice resource pack
+            </a>
 
         </section>
 
@@ -175,7 +89,7 @@
 
     <aside class="showcase-container">
 
-        <audio id="audio" src="media/showcase/idle4.ogg" autoplay="false"></audio>
+        <audio id="audio" src="media/showcase/idle4.ogg"></audio>
 
         <img onclick="playSound();" src="media/showcase/villager-pre.png" alt="">
         <img onclick="playSound();" src="media/showcase/pillager.png" alt="">

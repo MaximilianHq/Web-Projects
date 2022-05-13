@@ -7,159 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Holken</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="nav.css">
     <link rel="icon" href="media/holken.png" style="color: blue;">
-    <script src="https://kit.fontawesome.com/82c349bd99.js" crossorigin="anonymous"></script>
+    <!-- navigation panel -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
 
-    <article>
+    <!-- Navigation panel -->
+    <div id="nav-placeholder"></div>
 
-        <!-- NAVIGATION MENU -->
-        <nav id="nav">
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("/docs/assets/nav.html");
+        });
+    </script>
+    <!-- end of Navigation panel -->
 
-            <div class="menu">
-                <!-- menu button -->
-                <a style="font-size:30px; cursor:pointer" onclick="openNav()">
-                    <i class="fa-solid fa-bars"></i>
-                </a>
-                <!-- close button -->
-                <a href="javascript:void(0)" style="font-size: 40px;" onclick="closeNav()">
-                    <i style="font-size: 32px;" class="fa-solid fa-xmark"></i>
-                </a>
-            </div>
-
-            <div class="openNav">
-
-                <div onclick="openNavProjects()">
-                    <i style="margin-left: -1px;" class="fa-solid fa-diagram-project"></i>
-                    <span style="margin-left: 21px">Projects</span>
-                </div>
-
-                <div onclick="openNavSites()">
-                    <i class="fa-solid fa-window-maximize"></i>
-                    <span>Sites</span>
-                </div>
-
-                <div onclick="openNavResourcepacks()">
-                    <i style="margin-left: 4px;" class="fa-solid fa-file-arrow-down"></i>
-                    <span style="margin-left: 25px;">Resourcepacks</span>
-                </div>
-
-                <div onclick="openNavExercises()">
-                    <i class="fa-solid fa-book-open"></i>
-                    <span style="margin-left: 20px;">Exercises</span>
-                </div>
-
-                <div>
-                    <i style="margin-left: 2px;" class="fa-solid fa-globe"></i>
-                    <span style="margin-left: 23px;">Old Site</span>
-                </div>
-
-            </div>
-
-            <div class="credit">
-                <a href="https://www.flaticon.com/free-icons/folder" title="folder icons">
-                    Folder icons created by <br> Freepik - Flaticon
-                </a>
-            </div>
-
-            <div class="homebtn">
-                <a href="index.html">
-                    <i class="fa-solid fa-house"></i>
-                </a>
-            </div>
-
-        </nav>
-
-        <!-- PROJECTS NAVIGATION MENU -->
-        <nav id="navProjects">
-            <div class="menu-type2">
-                <a href="javascript:void(0)" onclick="closeNavProjects()">&#10174;</a>
-            </div>
-
-            <div class="openNav openNav-short">
-                <a href="projects/unitconverter/html/unitconverter.html">Unitconverter</a>
-            </div>
-        </nav>
-
-        <!-- SITES NAVIGATION MENU -->
-        <nav id="navSites">
-            <div class="menu-type2">
-                <a href="javascript:void(0)" onclick="closeNavSites()">&#10174;</a>
-            </div>
-
-            <div class="openNav openNav-short">
-                <a href="sites/judaism/judaism.html">Judaism</a>
-            </div>
-        </nav>
-
-        <!-- RESOURCEPACKS NAVIGATION MENU -->
-        <nav id="navResourcepacks">
-            <div class="menu-type2">
-                <a href="javascript:void(0)" onclick="closeNavResourcepacks()">&#10174;</a>
-            </div>
-
-            <div class="openNav openNav-short">
-                <a href="resourcepacks/sweet_prejudice.html">Sweet Prejudice</a>
-                <a href="resourcepacks/frasig_slade.html">Fäsig Släde</a>
-            </div>
-        </nav>
-
-        <!-- EXERCISES NAVIGATION MENU -->
-        <nav id="navExercises">
-            <div class="menu-type2">
-                <a href="javascript:void(0)" onclick="closeNavExercises()">&#10174;</a>
-            </div>
-
-            <div class="openNav">
-                <div onclick="openNavPractices()">
-                    <i class="fa-solid fa-book-bookmark"></i>
-                    <span>Practices</span>
-                </div>
-
-                <div onclick="openNavTemplates()">
-                    <i class="fa-solid fa-book"></i>
-                    <span>Templates</span>
-                </div>
-            </div>
-
-        </nav>
-
-        <!-- PRACTICES NAVIGATION MENU -->
-        <nav id="navPractices">
-            <div class="menu-type2">
-                <a href="javascript:void(0)" onclick="closeNavPractices()">&#10174;</a>
-            </div>
-
-            <div class="openNav openNav-short">
-                <a href="exercises/practices/web_history.html">WWW History</a>
-                <a href="exercises/practices/browsers.html">Browsers</a>
-                <a href="exercises/practices/charts/charts.html">Charts</a>
-            </div>
-        </nav>
-
-        <!-- TEMPLATES NAVIGATION MENU -->
-        <nav id="navTemplates">
-            <div class="menu-type2">
-                <a href="javascript:void(0)" onclick="closeNavTemplates()">&#10174;</a>
-            </div>
-
-            <div class="openNav openNav-short">
-                <a href="exercises/templates/lists.html">Lists</a>
-                <a href="exercises/templates/style_sheets.html">Style Sheets</a>
-                <a href="exercises/templates/box_model/box_model.html">Box Model</a>
-                <a href="exercises/templates/javascript/java_script.html">Java Script</a>
-                <a href="exercises/templates/fonts.html">Fonts</a>
-            </div>
-        </nav>
-
-        <script src="nav.js"></script>
-
-    </article>
-
-    <div class="main">
+    <main>
 
         <h1 class="headline">holken.zip</h1>
         <h2 class="headline2">THE PORTFOLIO FOR RETARDS</h2>
@@ -168,7 +33,7 @@
 
         </p>
 
-    </div>
+    </main>
 
 </body>
 

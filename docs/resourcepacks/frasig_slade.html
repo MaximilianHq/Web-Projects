@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fräsig Släde</title>
+    <link rel="stylesheet" href="resourcepacks.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300&display=swap" rel="stylesheet">
+    <!-- navigation panel -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation panel -->
+    <div id="nav-placeholder"></div>
+
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("/docs/assets/nav.html");
+        });
+    </script>
+    <!-- end of Navigation panel -->
+
+    <main>
+
+        <div class="navigation">
+            <a href="/docs/index.html">Home</a>
+            »
+            <a style="cursor:pointer" onclick="openNavResourcepacks()">Resource packs</a>
+            »
+            Fräsig Släde
+        </div>
+
+        <h1>Fräsig släde Resource Pack 1.8.0</h1>
+        <h2 class="pack-version">BY NoLifer47 - LAST UPDATED 15 MAY 2022</h2>
+
+        <p style="text-align: justify; font-size: 15px;">
+            It's a sledge, deal with it.
+        </p>
+
+        <div class="slideshow-container">
+
+            <div class="slide fade"><img src="media/slideshow_FS/sledge 1.png"></div>
+            <div class="slide fade"><img src="media/slideshow_FS/sledge 2.png"></div>
+            <div class="slide fade"><img src="media/slideshow_FS/sledge 3.png"></div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+
+        <div class="pack-info">
+            Sweet Prejudice Resoure Pack should be compatible with Minecraft version 1.8.0 and newer. <br>
+            OptiFine is required! - Older versions might experience missing textures!
+        </div>
+
+        <section class="download">
+
+            <b>Download links:</b> <br>
+
+            <a href="download/Fräsig Släde.zip" download>
+                &#x1f517; [1.8.0+] Download Fräsig Släde resource pack
+            </a>
+
+        </section>
+
+    </main>
+
+    <script src="img_slide.js"></script>
+</body>
+
+</html>
