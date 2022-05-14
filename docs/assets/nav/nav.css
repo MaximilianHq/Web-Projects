@@ -25,6 +25,7 @@ nav {
     display: flex;
     justify-content: flex-start;
     gap: 110px;
+    overflow: hidden;
 }
 
 .menu a {
@@ -38,26 +39,25 @@ nav {
 }
 
 .menu-type2 {
-    margin-top: 25px;
+    margin-top: 28px;
 
-    transform: rotate;
-    -webkit-transform: rotate(-180deg);
-    font-size: 36px;
+    font-size: 30px;
 }
 
 .menu-type2 a {
-    margin-right: 230px;
-    margin-left: 35px;
+    margin-left: 235px;
 
     text-decoration: none;
     color: #979797;
 }
 
 /* HOVER THEME */
-.homebtn a:hover i,
+.homebtn:hover i,
 .openNav div:hover i,
+.openNav-no-pic a:hover,
 .menu .fa-bars:hover,
-.menu .fa-xmark:hover {
+.menu .fa-xmark:hover,
+.menu-type2 .fa-arrow-left-long:hover {
     transition: 0.4s;
     color: rgb(75, 225, 255);
 }
@@ -83,17 +83,16 @@ nav {
     margin-left: 23px;
 }
 
-.openNav-short {
+.openNav-no-pic {
     margin-left: 75px;
 }
 
-.openNav-short a {
+.openNav-no-pic a {
     text-decoration: none;
     color: #979797;
 }
 
-/* NEW BUILD */
-
+/* potential credits
 .credit {
     position: absolute;
     margin-bottom: 150px;
@@ -108,20 +107,16 @@ nav {
     text-decoration: none;
     color: #979797;
 }
+*/
 
 .homebtn {
     position: absolute;
-    margin-left: -50px;
+    margin-left: 25px;
     margin-bottom: 25px;
     bottom: 0;
 
+    cursor: pointer;
+
     font-size: 25px;
-}
-
-.homebtn a {
-    margin-left: 75px;
-
-    text-decoration: none;
-    font-family: "Lato", sans-serif;
     color: #979797;
 }

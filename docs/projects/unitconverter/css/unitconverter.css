@@ -7,7 +7,7 @@ body {
     font-family: 'Fredoka', sans-serif;
 }
 
-.wrapper {
+main {
     background-color: rgba(255, 255, 255, 0.322);
     max-width: 500px;
     margin: auto;
@@ -92,7 +92,7 @@ input[type=number] {
 /* Small devices (tablets) */
 
 @media only screen and (max-width: 1200px) {
-    .wrapper {
+    main {
         margin-top: 40%;
     }
 
@@ -104,7 +104,7 @@ input[type=number] {
 /* Extra small devices (phones) */
 
 @media only screen and (max-width: 600px) {
-    .wrapper {
+    main {
         margin-top: 55%;
     }
 

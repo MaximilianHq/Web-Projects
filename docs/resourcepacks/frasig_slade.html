@@ -10,20 +10,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300&display=swap" rel="stylesheet">
-    <!-- navigation panel -->
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
 
     <!-- Navigation panel -->
     <div id="nav-placeholder"></div>
-
-    <script>
-        $(function () {
-            $("#nav-placeholder").load("/docs/assets/nav.html");
-        });
-    </script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="/docs/assets/nav/import-nav.js"></script>
     <!-- end of Navigation panel -->
 
     <main>
@@ -64,7 +58,8 @@
             <b>Download links:</b> <br>
 
             <a href="download/Fräsig Släde.zip" download>
-                &#x1f517; [1.8.0+] Download Fräsig Släde resource pack
+                <i class="fa-solid fa-file-arrow-down fa-bounce" style="--fa-bounce-height: -5px;"></i>
+                [1.8.0+] Download Fräsig Släde resource pack
             </a>
 
         </section>

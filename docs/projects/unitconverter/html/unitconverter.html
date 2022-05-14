@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enhetsomvandlare</title>
+    <title>Unitconverter</title>
     <link rel="stylesheet" href="../css/unitconverter.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
@@ -13,7 +13,14 @@
 </head>
 
 <body>
-    <div class="wrapper">
+
+    <!-- Navigation panel -->
+    <div id="nav-placeholder"></div>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="/docs/assets/nav/import-nav.js"></script>
+    <!-- end of Navigation panel -->
+
+    <main>
         <div class="converterMass">
             <p>
                 <!-- first selection unit (input1) -->
@@ -80,7 +87,7 @@
             <!-- V -->
             <p id="output2">ㅤ</p>
         </div>
-    </div>
+    </main>
 
     <p id="watermark"><img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/GitHub_Mark.png/128px-GitHub_Mark.png"
