@@ -1,24 +1,20 @@
+:root {
+    --txt-color: #ffffff;
+}
+
 body {
     font-family: "Lato", sans-serif;
 
-    background-image: url(media/bg1x.jpg);
+    background-image: url(media/wallpaper.png);
     /* COMMERCIAL USE CC */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-@media screen and (min-width: 2000px) {
-    body {
-        background-image: url(media/bg2x.jpg);
-        /* COMMERCIAL USE CC */
-    }
-
-    ;
-}
-
 h2 {
     font-size: 2.4vw;
+
 }
 
 main {
@@ -43,7 +39,7 @@ main {
 .headline {
     margin-top: 250px;
 
-    color: rgb(0, 0, 0);
+    color: var(--txt-color);
     font-size: 10vw;
 }
 
@@ -51,11 +47,26 @@ main {
     margin-top: -8.5vw;
     margin-left: -5vw;
 
-    color: rgb(0, 0, 0);
+    color: var(--txt-color);
 }
 
-.info {
+.lore {
+    max-width: 1000px;
+    margin: auto;
     margin-top: 230px;
+    color: var(--txt-color);
 }
 
-/* THIS IS A TEST */
+.lore h2 {
+    font-size: 30px;
+}
+
+.lore p {
+    padding: 20px;
+
+    text-align: justify;
+
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.70);
+    border-radius: 7px;
+}
