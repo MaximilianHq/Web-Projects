@@ -70,34 +70,11 @@ input[type=number] {
     margin-top: 60px;
 }
 
-/* WATERMARK */
-
-#watermark {
-    margin-top: 270px;
-    text-align: right;
-    margin-right: 50px;
-    font-size: 18px;
-    font-family: 'Fredoka', sans-serif;
-}
-
-#watermark img {
-    max-block-size: 30px;
-    margin-right: 10px;
-}
-
-#watermark a {
-    color: rgb(202, 202, 202);
-}
-
 /* Small devices (tablets) */
 
 @media only screen and (max-width: 1200px) {
     main {
         margin-top: 40%;
-    }
-
-    #watermark {
-        margin-top: 380px;
     }
 }
 
@@ -111,10 +88,6 @@ input[type=number] {
     input[type=number] {
         width: 160px;
     }
-
-    #watermark {
-        margin-top: 250px;
-    }
 }
 
 /* Super small devices (galaxy fold) */
@@ -122,9 +95,5 @@ input[type=number] {
 @media only screen and (max-width: 300px) {
     input[type=number] {
         width: 60px;
-    }
-
-    #watermark {
-        margin-top: 90px;
     }
 }

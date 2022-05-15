@@ -73,7 +73,7 @@
 
                 <b>Download links:</b> <br>
 
-                <a href="download/Sweet-Prejudice 1.16+.zip.zip" download>
+                <a href="download/Sweet-Prejudice 1.16+.zip" download>
                     <i class="fa-solid fa-file-arrow-down fa-bounce" style="--fa-bounce-height: -5px;"></i>
                     [1.16+] Download Sweet Prejudice resource pack
                 </a> <br>
@@ -88,14 +88,21 @@
 
         <aside class="showcase-container">
 
-            <audio id="audio" src="media/showcase/idle4.ogg"></audio>
+            <audio id="pillager-audio" src="media/showcase/idle4.ogg"></audio>
+            <audio id="minecart-audio" src="media/showcase/thomas.mp3"></audio>
 
-            <img onclick="playSound();" src="media/showcase/villager-pre.png" alt="">
-            <img onclick="playSound();" src="media/showcase/pillager.png" alt="">
+            <img onclick="playSoundMinecart();" src="media/showcase/minecart.png" alt="">
+            <span style="text-align: center;">press us for surprise!</span>
+            <img onclick="playSoundPillager();" src="media/showcase/pillager.png" alt="">
 
             <script>
-                function playSound() {
-                    var sound = document.getElementById("audio");
+                function playSoundMinecart() {
+                    var sound = document.getElementById("minecart-audio");
+                    sound.play();
+                }
+
+                function playSoundPillager() {
+                    var sound = document.getElementById("pillager-audio");
                     sound.play();
                 }
             </script>

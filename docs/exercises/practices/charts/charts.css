@@ -1,9 +1,8 @@
-ssbody {
-    width: 800px;
-    height: 1000px;
+main {
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
+    padding: 80px;
 }
 
 table {
