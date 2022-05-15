@@ -1,3 +1,8 @@
+:root {
+    --icon-color: #d1d1d1;
+    --icon-color-hover: #a200ff;
+}
+
 nav {
     position: fixed;
     height: 100%;
@@ -11,7 +16,7 @@ nav {
     overflow-x: hidden;
     /* Overflow specifies what should happen if 
                            content overflows an element's box. */
-    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(to right, #0e0012 , #100015 , #120018);
 }
 
 .first-nav {
@@ -19,23 +24,20 @@ nav {
 }
 
 .menu {
-    margin-left: -50px;
-    margin-top: 30px;
+    margin-left: 10px;
+    margin-top: 12px;
 
     display: flex;
     justify-content: flex-start;
-    gap: 110px;
-    overflow: hidden;
+    gap: 165px;
 }
 
-.menu a {
-    display: flex;
-    gap: 23px;
-    margin-left: 75px;
+.menu div {
+    padding: 15px;
 
-    text-decoration: none;
-    font-size: 25px;
-    color: #979797;
+    cursor: pointer;
+
+    color: var(--icon-color);
 }
 
 .menu-type2 {
@@ -45,51 +47,67 @@ nav {
 }
 
 .menu-type2 a {
-    margin-left: 235px;
+    margin-left: 220px;
+    padding: 15px;
 
     text-decoration: none;
-    color: #979797;
+    color: var(--icon-color);
 }
 
 /* HOVER THEME */
 .homebtn:hover i,
 .openNav div:hover i,
 .openNav-no-pic a:hover,
-.menu .fa-bars:hover,
-.menu .fa-xmark:hover,
+.menu div:hover i,
 .menu-type2 .fa-arrow-left-long:hover {
-    transition: 0.4s;
-    color: rgb(75, 225, 255);
+    color: var(--icon-color-hover);
 }
 
+.homebtn i,
+.openNav div i,
+.openNav-no-pic a,
+.menu div i,
+.menu-type2 .fa-arrow-left-long {
+    transition: 0.8s;
+}
+
+/* Navigation menu with icons */
 .openNav {
-    margin-left: 25px;
-    margin-top: 30px;
+    margin-left: 10px;
+    margin-top: 20px;
 
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     white-space: nowrap;
-    gap: 30px;
 
     cursor: pointer;
 
     font-size: 25px;
     font-family: "Lato", sans-serif;
-    color: #979797;
+    color: var(--icon-color);
+}
+.openNav div{
+    padding: 15px; /* Instead of gap, so that whole div is clickable */
 }
 
 .openNav span {
-    margin-left: 23px;
+    margin-left: 25px;
 }
 
+/* Navigation menu without icons */
 .openNav-no-pic {
-    margin-left: 75px;
+    cursor:auto;
 }
 
 .openNav-no-pic a {
+    margin-left: 55px;
+    padding: 15px;
+
+    cursor: pointer;
+
     text-decoration: none;
-    color: #979797;
+    color: var(--icon-color);
 }
 
 /* potential credits
@@ -111,12 +129,13 @@ nav {
 
 .homebtn {
     position: absolute;
-    margin-left: 25px;
-    margin-bottom: 25px;
+    margin-left: 10px;
+    margin-bottom: 10px;
     bottom: 0;
+    padding: 15px;
 
     cursor: pointer;
 
     font-size: 25px;
-    color: #979797;
+    color: var(--icon-color);
 }

@@ -1,8 +1,9 @@
+:root {
+    --light-grey: #a2a2a2;
+}
+
 body {
     margin: 0;
-
-    display: flex;
-    justify-content: center;
 
     font-family: Arial;
 
@@ -14,8 +15,13 @@ body {
     background-size: cover;
 }
 
-/* PACK */
 main {
+    display: flex;
+    justify-content: center;
+}
+
+/* PACK */
+article {
     max-width: 800px;
     margin-left: 75px;
     padding: 30px 50px 50px;
@@ -24,16 +30,16 @@ main {
     flex-direction: column;
     justify-content: center;
 
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
 }
 
 @media screen and (max-width:800px) {
 
-    body {
+    main {
         flex-direction: column;
     }
 
-    main {
+    article {
         padding: 8px 20px 20px;
     }
 }
@@ -43,12 +49,12 @@ main {
     margin-top: 20px;
 
     font-size: 12.5px;
-    color: rgb(162, 162, 162);
+    color: var(--light-grey);
 }
 
 .navigation a {
     text-decoration: none;
-    color: rgb(109, 109, 109);
+    color: #6d6d6d;
 }
 
 /* PACK VERSION */
@@ -57,9 +63,9 @@ main {
     margin-top: -15px;
 
     font-size: 12.5px;
-    border-left: 3px solid rgb(162, 162, 162);
+    border-left: 3px solid var(--light-grey);
     border-radius: 3px;
-    color: rgb(162, 162, 162);
+    color: #a2a2a2;
 }
 
 /* SLIDESHOW CONTAINER */
@@ -137,7 +143,7 @@ main {
     margin-top: 30px;
     padding: 15px;
 
-    border: 0.5px solid rgb(177, 177, 177);
+    border: 0.5px solid var(--light-grey);
     border-radius: 3px;
     line-height: 30px;
 }
@@ -160,7 +166,7 @@ main {
     cursor: pointer;
 
     background-color: black;
-    background-color: rgb(240, 240, 240);
+    background-color: #f0f0f0;
 }
 
 @media screen and (max-width:800px) {
