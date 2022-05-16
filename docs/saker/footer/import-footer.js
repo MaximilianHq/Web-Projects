@@ -1,3 +1,3 @@
-$.get("/docs/saker/footer/footer.html", function(data){
-    $("#nav-placeholder").replaceWith(data);
+$(function () {
+    $("#footer-placeholder").load("/docs/saker/footer/footer.html");
 });
