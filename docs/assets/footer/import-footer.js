@@ -1,3 +1,3 @@
 $(function () {
-    $("#footer-placeholder").load("assets/footer/footer.html");
+    $("#footer-placeholder").load("/assets/footer/footer.html");
 });
