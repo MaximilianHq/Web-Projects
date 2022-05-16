@@ -1,3 +1,3 @@
 $(function () {
-    $("#nav-placeholder").load("/assets/nav/nav.html");
+    $("#nav-placeholder").load("https://nolifer47.github.io/Web-Projects/docs/assets/nav/nav.html");
 });
