@@ -5,166 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOLKEN</title>
+    <title>Holken.zip</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="nav.css">
-    <link rel="icon" href="media/template.png">
-    <script src="https://kit.fontawesome.com/3224e7e886.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="media/holken.png">
 </head>
 
 <body>
 
-    <article>
+    <!-- Navigation panel -->
+    <div id="nav-placeholder"></div>
+    <script src="/docs/saker/jquery-1.10.2.js"></script>
+    <script src="/docs/saker/nav/import-nav.js"></script>
+    <!-- end of Navigation panel -->
 
-        <!-- NAVIGATION MENU -->
-        <nav id="nav">
+    <main>
+        <div class="head" onclick="openNav()">
+            <h1 class="headline">holken.zip</h1>
+            <h2 class="headline2">THE DUMBEST TEST 3 PORTFOLIO EVER</h2>
+        </div>
 
-            <div class="menu">
-                <!-- menu button -->
-                <a style="font-size:30px; cursor:pointer" onclick="openNav()">&#9777;</a>
-                <!-- close button -->
-                <a href="javascript:void(0)" style="font-size: 40px;" onclick="closeNav()">&times;</a>
-            </div>
+        <div class="lore">
+            <h2>HOLKEN LORE</h2>
+            <p>
+                In the small town of Hölö, young Albert is walking in the corridors of Hölö Skolan.
+                His math lesson starts in five minutes, and he now has to rush to make it in time.
+                Just as the bell rings, he opens the door to the classroom and takes his seat.
+                The teacher took a good look at him and nodded carefully. The lesson goes on and
+                the teacher asks the class if someone can solve the mathematic equation displayed on the
+                whiteboard. No one extends their hand to answer, and Albert is now asked whether or not
+                he can solve the equation. Slowly, he stands up in his seat and starts shuddering words
+                incomprehensible to the rest of the class. Albert can feel them staring at him.
+                He finally speaks up and says something along the lines "2 squared is equal to 5".
+                Dead silence… A laugh can be heard echoing from the back of the class and the other pupils
+                soon begin to cry in laughter. The teacher, now with disappointment in their eyes, pointed
+                at the door, signaling that Albert should leave the classroom. As he makes his way to the door
+                rest of the class began chanting in between their laughter. Holken Albert! Holken Albert!
+                Holken Albert! (Holken is a room for students who need extra help with schoolwork and is often
+                seen as a room for stupid individuals). He could still hear the students chanting in the classroom
+                when he arrived at Holken. He took a good grip on the door handle and promised himself that he
+                would prove them wrong. Determined to one day escape Holkens grasp and have revenge on his peers.
+            </p>
+        </div>
 
-            <div class="openNav">
+    </main>
 
-                <div onclick="openNavProjects()">
-                    <i class="fa-solid fa-diagram-project fa-0x"></i>
-                    <span>Projects</span>
-                </div>
-
-                <div onclick="openNavSites()">
-                    <i class="fa-solid fa-square-arrow-up-right"></i>
-                    <span>Sites</span>
-                </div>
-
-                <div onclick="openNavResourcepacks()">
-                    <i class="fa-solid fa-file-zipper fa-xm"></i>
-                    <span>Resourcepacks</span>
-                </div>
-
-                <div onclick="openNavExercises()">
-                    <img  src="media/template.png" alt="">
-                    <span>Exercises</span>
-                </div>
-
-                <div>
-                    <img src="" alt="">
-                    <a href="old_site/old_site.html"></a>
-                </div>
-
-            </div>
-
-            <div class="credit">
-                <a href="https://www.flaticon.com/free-icons/folder" title="folder icons">
-                    Folder icons created by <br> Freepik - Flaticon
-                </a>
-            </div>
-
-            <div class="homebtn">
-                <a href="index.html">
-                    <i class="fa-solid fa-house"></i>
-                </a>
-            </div>
-
-        </nav>
-
-        <!-- PROJECTS NAVIGATION MENU -->
-        <nav id="navProjects">
-            <div class="menu-type2">
-                <a href="javascript:void(0)" onclick="closeNavProjects()">&#10174;</a>
-            </div>
-
-            <div class="openNav openNav-short">
-                <a href="projects/unitconverter/html/unitconverter.html">Unitconverter</a>
-            </div>
-        </nav>
-
-        <!-- SITES NAVIGATION MENU -->
-        <nav id="navSites">
-            <div class="menu-type2">
-                <a href="javascript:void(0)" onclick="closeNavSites()">&#10174;</a>
-            </div>
-
-            <div class="openNav openNav-short">
-                <a href="sites/judaism/judaism.css">Sites</a>
-            </div>
-        </nav>
-
-        <!-- RESOURCEPACKS NAVIGATION MENU -->
-        <nav id="navResourcepacks">
-            <div class="menu-type2">
-                <a href="javascript:void(0)" onclick="closeNavResourcepacks()">&#10174;</a>
-            </div>
-
-            <div class="openNav openNav-short">
-                <a href="resourcepacks/sweet_prejudice.html">Sweet Prejudice</a>
-                <a href="resourcepacks/frasig_slade.html">Fäsig Släde</a>
-            </div>
-        </nav>
-
-        <!-- EXERCISES NAVIGATION MENU -->
-        <nav id="navExercises">
-            <div class="menu-type2">
-                <a href="javascript:void(0)" onclick="closeNavExercises()">&#10174;</a>
-            </div>
-
-            <div class="openNav">
-                <div onclick="openNavPractices()">
-                    <i class="fa-solid fa-book-bookmark"></i>
-                    <span>Practices</span>
-                </div>
-    
-                <div onclick="openNavTemplates()">
-                    <i class="fa-solid fa-book"></i>
-                    <span>Templates</span>
-                </div>
-            </div>
-            
-        </nav>
-
-        <!-- PRACTICES NAVIGATION MENU -->
-        <nav id="navPractices">
-            <div class="menu-type2">
-                <a href="javascript:void(0)" onclick="closeNavPractices()">&#10174;</a>
-            </div>
-            
-            <div class="openNav openNav-short">
-                <a href="exercises/practices/web_history.html">WWW History</a>
-                <a href="exercises/practices/browsers.html">Browsers</a>
-                <a href="exercises/practices/charts/charts.html">Charts</a>
-            </div>
-        </nav>
-
-        <!-- TEMPLATES NAVIGATION MENU -->
-        <nav id="navTemplates">
-            <div class="menu-type2">
-                <a href="javascript:void(0)" onclick="closeNavTemplates()">&#10174;</a>
-            </div>
-            
-            <div class="openNav openNav-short">
-                <a href="exercises/templates/lists.html">Lists</a>
-                <a href="exercises/templates/style_sheets.html">Style Sheets</a>
-                <a href="exercises/templates/box_model/box_model.html">Box Model</a>
-                <a href="exercises/templates/javascript/java_script.html">Java Script</a>
-                <a href="exercises/templates/fonts.html">Fonts</a>
-            </div>
-        </nav>
-
-        <script src="nav.js"></script>
-
-    </article>
-
-    <div class="main">
-
-        <h1 class="headline">holken.zip</h1>
-        <h2 class="headline2">THE PORTFOLIO FOR RETARDS</h2>
-        <h2 class="info">WHAT IS HOLKEN?</h2>
-        <p>
-
-        </p>
-
-    </div>
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="/docs/saker/footer/import-footer.js"></script>
+    <!-- end of Footer -->
 
 </body>
 
